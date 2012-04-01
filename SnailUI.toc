@@ -1,0 +1,14 @@
+## Author: Snail
+## Dependencies: oUF, oUF_SpellRange
+## Interface: 40300
+## Notes: Snail's minimalistic UI.
+## Title: SnailUI
+## Version: 0.1.1
+
+Configuration\Configuration.lua
+
+Functions.lua
+SnailUI.lua
+Tags.lua
+
+Themes\Default.lua
