@@ -3,17 +3,12 @@
 
 Configuration['Default'] =
 {
-	Bag =
+	ActionBar =
 	{
-		anchor = 'RIGHT',
-		colorByClass = true,
-		height = 200,
-		width = 200,
-		x = -100,
-		y = 0,
+		
 	},
 
-	Focus =
+	FocusFrame =
 	{
 		anchor = 'CENTER',
 		colorByClass = true,
@@ -22,7 +17,7 @@ Configuration['Default'] =
 		x = -365,
 		y = -102,
 
-		Cast =
+		CastingBar =
 		{
 			anchor = 'LEFT',
 			colorByClass = true,
@@ -34,7 +29,7 @@ Configuration['Default'] =
 			y = 0
 		},
 
-		Health =
+		HealthBar =
 		{
 			anchor = 'TOPLEFT',
 			colorByClass = true,
@@ -48,11 +43,11 @@ Configuration['Default'] =
 
 		Portrait =
 		{
-			anchor = 'TOPRIGHT',
+			anchor = 'RIGHT',
 			height = 28,
 			width = 28,
 			x = -3,
-			y = -3,
+			y = 0,
 
 			Color =
 			{
@@ -62,7 +57,7 @@ Configuration['Default'] =
 			}
 		},
 
-		Power =
+		PowerBar =
 		{
 			anchor = 'BOTTOMLEFT',
 			colorByClass = true,
@@ -85,7 +80,7 @@ Configuration['Default'] =
 		x = -7,
 		y = -7,
 
-		Battleground =
+		BattlegroundButton =
 		{
 			anchor ='BOTTOMLEFT',
 			x = 2,
@@ -102,21 +97,21 @@ Configuration['Default'] =
 			y = 6
 		},
 
-		LFG =
+		LFGButton =
 		{
 			anchor ='BOTTOMLEFT',
 			x = 0,
 			y = 0
 		},
 
-		Mail =
+		MailButton =
 		{
 			anchor ='BOTTOMRIGHT',
 			x = 1,
 			y = -2
 		},
 
-		Tracking =
+		TrackingButton =
 		{
 			anchor ='TOPLEFT',
 			x = -1,
@@ -124,7 +119,7 @@ Configuration['Default'] =
 		}
 	},
 
-	Pet =
+	PetFrame =
 	{
 		anchor = 'CENTER',
 		colorByClass = true,
@@ -133,7 +128,7 @@ Configuration['Default'] =
 		x = -440,
 		y = -50,
 
-		Cast =
+		CastingBar =
 		{
 			anchor = 'LEFT',
 			colorByClass = true,
@@ -145,7 +140,7 @@ Configuration['Default'] =
 			y = 0
 		},
 
-		Health =
+		HealthBar =
 		{
 			anchor = 'TOPRIGHT',
 			colorByClass = true,
@@ -159,10 +154,10 @@ Configuration['Default'] =
 
 		Portrait =
 		{
-			anchor = 'BOTTOMLEFT',
+			anchor = 'BOTTOM',
 			height = 12,
 			width = 12,
-			x = 3,
+			x = 0,
 			y = 3,
 
 			Color =
@@ -173,7 +168,7 @@ Configuration['Default'] =
 			}
 		},
 
-		Power =
+		PowerBar =
 		{
 			anchor = 'TOPLEFT',
 			colorByClass = true,
@@ -186,7 +181,7 @@ Configuration['Default'] =
 		}
 	},
 
-	Player =
+	PlayerFrame =
 	{
 		anchor = 'CENTER',
 		colorByClass = true,
@@ -195,7 +190,7 @@ Configuration['Default'] =
 		x = -300,
 		y = -50,
 
-		Cast =
+		CastingBar =
 		{
 			anchor = 'BOTTOM',
 			colorByClass = true,
@@ -207,52 +202,72 @@ Configuration['Default'] =
 			y = -17
 		},
 
-		ComboPoints =
+		ComboPointBar =
 		{
-			anchor = 'TOPLEFT',
-			anchor2 = 'TOPRIGHT',
+			anchor = 'TOP',
 			colorByClass = true,
 			height = 16,
-			orientation = 'HORIZONTAL',
-			texture = [[Interface\AddOns\SnailUI\SnailUI]],
 			width = 256,
-			x = 1,
-			xOffset = 3,
+			x = 0,
 			y = 19,
-			yOffset = 0,
 
 			[1] =
 			{
+				anchor = 'LEFT',
 				height = 12,
-				width = 50
+				orientation = 'HORIZONTAL',
+				texture = [[Interface\AddOns\SnailUI\SnailUI]],
+				width = 50,
+				x = 2,
+				y = 0
 			},
 
 			[2] =
 			{
+				anchor = 'LEFT',
 				height = 12,
-				width = 49
+				orientation = 'HORIZONTAL',
+				texture = [[Interface\AddOns\SnailUI\SnailUI]],
+				width = 49,
+				x = 53,
+				y = 0
 			},
 
 			[3] =
 			{
+				anchor = 'CENTER',
 				height = 12,
-				width = 50
+				orientation = 'HORIZONTAL',
+				texture = [[Interface\AddOns\SnailUI\SnailUI]],
+				width = 50,
+				x = 0,
+				y = 0
 			},
 
 			[4] =
 			{
+				anchor = 'RIGHT',
 				height = 12,
-				width = 49
+				orientation = 'HORIZONTAL',
+				texture = [[Interface\AddOns\SnailUI\SnailUI]],
+				width = 49,
+				x = -53,
+				y = 0
 			},
 
 			[5] =
 			{
+				anchor = 'RIGHT',
 				height = 12,
-				width = 50
+				orientation = 'HORIZONTAL',
+				texture = [[Interface\AddOns\SnailUI\SnailUI]],
+				width = 50,
+				x = -2,
+				y = 0
 			}
 		},
 
-		Health =
+		HealthBar =
 		{
 			anchor = 'TOPRIGHT',
 			colorByClass = true,
@@ -266,11 +281,11 @@ Configuration['Default'] =
 
 		Portrait =
 		{
-			anchor = 'TOPLEFT',
+			anchor = 'LEFT',
 			height = 60,
 			width = 60,
 			x = 3,
-			y = -3,
+			y = 0,
 
 			Color =
 			{
@@ -280,40 +295,50 @@ Configuration['Default'] =
 			}
 		},
 
-		HolyPower =
+		HolyPowerBar =
 		{
-			anchor = 'TOPLEFT',
-			anchor2 = 'TOPRIGHT',
+			anchor = 'TOP',
 			colorByClass = true,
 			height = 16,
-			orientation = 'HORIZONTAL',
-			texture = [[Interface\AddOns\SnailUI\SnailUI]],
 			width = 256,
-			x = 1,
-			xOffset = 3,
+			x = 0,
 			y = 19,
-			yOffset = 0,
 
 			[1] =
 			{
+				anchor = 'LEFT',
 				height = 12,
-				width = 83
+				orientation = 'HORIZONTAL',
+				texture = [[Interface\AddOns\SnailUI\SnailUI]],
+				width = 83,
+				x = 2,
+				y = 0
 			},
 
 			[2] =
 			{
+				anchor = 'CENTER',
 				height = 12,
-				width = 84
+				orientation = 'HORIZONTAL',
+				texture = [[Interface\AddOns\SnailUI\SnailUI]],
+				width = 84,
+				x = 0,
+				y = 0
 			},
 
 			[3] =
 			{
+				anchor = 'RIGHT',
 				height = 12,
-				width = 83
+				orientation = 'HORIZONTAL',
+				texture = [[Interface\AddOns\SnailUI\SnailUI]],
+				width = 83,
+				x = -2,
+				y = 0
 			}
 		},
 
-		Power =
+		PowerBar =
 		{
 			anchor = 'BOTTOMRIGHT',
 			colorByClass = true,
@@ -325,92 +350,127 @@ Configuration['Default'] =
 			y = 3
 		},
 
-		Runes =
+		RuneBar =
 		{
-			anchor = 'TOPLEFT',
-			anchor2 = 'TOPRIGHT',
+			anchor = 'TOP',
 			colorByClass = true,
 			height = 16,
-			orientation = 'HORIZONTAL',
-			texture = [[Interface\AddOns\SnailUI\SnailUI]],
 			width = 256,
-			x = 1,
-			xOffset = 3,
+			x = 0,
 			y = 19,
-			yOffset = 0,
 
 			[1] =
 			{
+				anchor = 'LEFT',
 				height = 12,
-				width = 42
+				orientation = 'HORIZONTAL',
+				texture = [[Interface\AddOns\SnailUI\SnailUI]],
+				width = 42,
+				x = 2,
+				y = 0
 			},
 
 			[2] =
 			{
+				anchor = 'LEFT',
 				height = 12,
-				width = 41
+				orientation = 'HORIZONTAL',
+				texture = [[Interface\AddOns\SnailUI\SnailUI]],
+				width = 41,
+				x = 45,
+				y = 0
 			},
 
 			[3] =
 			{
+				anchor = 'CENTER',
 				height = 12,
-				width = 41
+				orientation = 'HORIZONTAL',
+				texture = [[Interface\AddOns\SnailUI\SnailUI]],
+				width = 41,
+				x = -20,
+				y = 0
 			},
 
 			[4] =
 			{
+				anchor = 'CENTER',
 				height = 12,
-				width = 41
+				orientation = 'HORIZONTAL',
+				texture = [[Interface\AddOns\SnailUI\SnailUI]],
+				width = 41,
+				x = 22,
+				y = 0
 			},
 
 			[5] =
 			{
+				anchor = 'RIGHT',
 				height = 12,
-				width = 41
+				orientation = 'HORIZONTAL',
+				texture = [[Interface\AddOns\SnailUI\SnailUI]],
+				width = 41,
+				x = -44,
+				y = 0
 			},
 
 			[6] =
 			{
+				anchor = 'RIGHT',
 				height = 12,
-				width = 41
+				orientation = 'HORIZONTAL',
+				texture = [[Interface\AddOns\SnailUI\SnailUI]],
+				width = 41,
+				x = -2,
+				y = 0
 			}
 		},
 
-		SoulShards =
+		SoulShardBar =
 		{
-			anchor = 'TOPLEFT',
-			anchor2 = 'TOPRIGHT',
+			anchor = 'TOP',
 			colorByClass = true,
 			height = 16,
-			orientation = 'HORIZONTAL',
-			texture = [[Interface\AddOns\SnailUI\SnailUI]],
 			width = 256,
-			x = 1,
-			xOffset = 3,
+			x = 0,
 			y = 19,
-			yOffset = 0,
 
 			[1] =
 			{
+				anchor = 'LEFT',
 				height = 12,
-				width = 83
+				orientation = 'HORIZONTAL',
+				texture = [[Interface\AddOns\SnailUI\SnailUI]],
+				width = 83,
+				x = 2,
+				y = 0
 			},
 
 			[2] =
 			{
+				anchor = 'CENTER',
 				height = 12,
-				width = 84
+				orientation = 'HORIZONTAL',
+				texture = [[Interface\AddOns\SnailUI\SnailUI]],
+				width = 84,
+				x = 0,
+				y = 0
 			},
 
 			[3] =
 			{
+				anchor = 'RIGHT',
 				height = 12,
-				width = 83
+				orientation = 'HORIZONTAL',
+				texture = [[Interface\AddOns\SnailUI\SnailUI]],
+				width = 83,
+				x = -2,
+				y = 0
 			}
 		}
 	},
 
-	Raid =
+	RaidFrame =
 	{
 		anchor = 'CENTER',
 		colorByClass = true,
@@ -432,7 +492,7 @@ Configuration['Default'] =
 		x = 0,
 		y = -300,
 
-		Health =
+		HealthBar =
 		{
 			anchor = 'TOPLEFT',
 			colorByClass = true,
@@ -453,10 +513,10 @@ Configuration['Default'] =
 				x = 1,
 				y = 0
 			}
-		},
+		}
 	},
 
-	Target =
+	TargetFrame =
 	{
 		anchor = 'CENTER',
 		colorByClass = true,
@@ -465,7 +525,7 @@ Configuration['Default'] =
 		x = 300,
 		y = -50,
 
-		Cast =
+		CastingBar =
 		{
 			anchor = 'BOTTOM',
 			colorByClass = true,
@@ -477,7 +537,7 @@ Configuration['Default'] =
 			y = -17
 		},
 
-		Health =
+		HealthBar =
 		{
 			anchor = 'TOPLEFT',
 			colorByClass = true,
@@ -491,11 +551,11 @@ Configuration['Default'] =
 
 		Portrait =
 		{
-			anchor = 'TOPRIGHT',
+			anchor = 'RIGHT',
 			height = 60,
 			width = 60,
 			x = -3,
-			y = -3,
+			y = 0,
 
 			Color =
 			{
@@ -505,7 +565,7 @@ Configuration['Default'] =
 			}
 		},
 
-		Power =
+		PowerBar =
 		{
 			anchor = 'BOTTOMLEFT',
 			colorByClass = true,
@@ -518,7 +578,7 @@ Configuration['Default'] =
 		}
 	},
 
-	Targettarget =
+	TargetTargetFrame =
 	{
 		anchor = 'CENTER',
 		colorByClass = true,
@@ -527,7 +587,7 @@ Configuration['Default'] =
 		x = 440,
 		y = -50,
 
-		Cast =
+		CastingBar =
 		{
 			anchor = 'RIGHT',
 			colorByClass = true,
@@ -539,7 +599,7 @@ Configuration['Default'] =
 			y = 0
 		},
 
-		Health =
+		HealthBar =
 		{
 			anchor = 'TOPRIGHT',
 			colorByClass = true,
@@ -553,10 +613,10 @@ Configuration['Default'] =
 
 		Portrait =
 		{
-			anchor = 'BOTTOMLEFT',
+			anchor = 'BOTTOM',
 			height = 12,
 			width = 12,
-			x = 3,
+			x = 0,
 			y = 3,
 
 			Color =
@@ -567,7 +627,7 @@ Configuration['Default'] =
 			}
 		},
 
-		Power =
+		PowerBar =
 		{
 			anchor = 'TOPLEFT',
 			colorByClass = true,
